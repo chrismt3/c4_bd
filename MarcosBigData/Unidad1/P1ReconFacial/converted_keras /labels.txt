@@ -1,0 +1,7 @@
+0 freddy
+1 karina
+2 nube
+3 jimmy
+4 joseph
+5 alex
+6 anthony
