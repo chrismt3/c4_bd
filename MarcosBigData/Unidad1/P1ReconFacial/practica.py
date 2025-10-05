@@ -14,7 +14,8 @@ with open(LABELS_PATH, "r", encoding="utf-8") as f:
     class_names = [line.strip() for line in f.readlines()]
 
 # 0 suele ser la webcam integrada; cambia a 1 si usas una USB adicional
-camera = cv2.VideoCapture(0, cv2.CAP_DSHOW)  # CAP_DSHOW ayuda en Windows
+#camera = cv2.VideoCapture(0, cv2.CAP_DSHOW)  # CAP_DSHOW ayuda en Windows
+camera = cv2.VideoCapture(0) # Funciona con Ubuntu
 
 if not camera.isOpened():
     raise RuntimeError("No se pudo abrir la cámara. Prueba con otro índice (0/1) o revisa permisos.")
